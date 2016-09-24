@@ -65,4 +65,4 @@ get_header(); ?>
 
 	</section>
 	<!-- END blog page -->
-<?php get_footer();
+<?php get_footer(); ?>
