@@ -20,7 +20,7 @@
 
 #masthead {
     background: none repeat scroll 0 0 #45ac9d;
-    margin-bottom: 50px;
+
   }
 
 #masthead nav ul li {
@@ -66,7 +66,7 @@
 
 aside.case-study-sidebar {
   float: left;
-  margin-top: 50px;
+  margin-top: 60px;
   width: 300px;
 
 }
@@ -118,8 +118,8 @@ div.case-study-images {
 div.case-study-images img{
   border: 1px solid #CCC;
   display: block;
-  margin: 20px 50px 5px 20px;
+  margin: 60px 50px 5px 20px;
   width: 100%;
   height: auto;
-  
+
 }
