@@ -24,6 +24,7 @@ get_header(); ?>
 				$image_1 = get_field('image_1');
 				$image_2 = get_field('image_2');
 				$image_3 = get_field('image_3');
+				$size = "full";  //show full size image
 			?>
 
 			<!--Display custom advanced fields on page-->
@@ -40,13 +41,13 @@ get_header(); ?>
 				<!--Display case study images--->
 				<div class="case-study-images">
 					<?php if($image_1) { ?>
-						<img class="alignnone" src="<?php echo $image_1['url']; ?>" alt="<?php echo $image['alt']; ?>"/>
+						<img class="alignnone" src="<?php echo wp_get_attachment_image( $image_1, $size ); ?>"/>
 				<?php } ?>
 				<?php if($image_2) { ?>
-						<img class="alignnone" src="<?php echo $image_2['url']; ?>" alt="<?php echo $image['alt']; ?>" />
+						<img class="alignnone" src="<?php echo wp_get_attachment_image( $image_2, $size ); ?>"  />
 				<?php } ?>
 				<?php if($image_3) { ?>
-					<img class="alignnone" src="<?php echo $image_3['url']; ?>" alt="<?php echo $image['alt']; ?>" />
+					<img class="alignnone" src="<?php echo wp_get_attachment_image( $image_2, $size ); ?>" />
 				<?php } ?>
 				</div>
 			</article>
