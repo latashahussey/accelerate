@@ -41,13 +41,13 @@ get_header(); ?>
 				<!--Display case study images--->
 				<div class="case-study-images">
 					<?php if($image_1) { ?>
-						<img class="alignnone" src="<?php echo wp_get_attachment_image( $image_1, $size ); ?>"/>
+						<?php echo wp_get_attachment_image( $image_1, $size ); ?>
 				<?php } ?>
 				<?php if($image_2) { ?>
-						<img class="alignnone" src="<?php echo wp_get_attachment_image( $image_2, $size ); ?>"  />
+						<?php echo wp_get_attachment_image( $image_2, $size ); ?>
 				<?php } ?>
 				<?php if($image_3) { ?>
-					<img class="alignnone" src="<?php echo wp_get_attachment_image( $image_2, $size ); ?>" />
+					<?php echo wp_get_attachment_image( $image_3, $size ); ?>
 				<?php } ?>
 				</div>
 			</article>
