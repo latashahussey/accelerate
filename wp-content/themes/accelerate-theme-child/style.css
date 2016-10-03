@@ -30,10 +30,9 @@
 }
 #masthead nav {
   margin: -25px;
+}
 
-}
-}
-  .button {
+.button {
       background: none repeat scroll 0 0 #45ac9d;
   }
 
@@ -121,5 +120,36 @@ div.case-study-images img{
   margin: 60px 50px 5px 20px;
   width: 100%;
   height: auto;
+
+}
+
+/*---Featured Work - Front Page----*/
+h4.featured-work-title {
+  font-size: 18px;
+  font-family: 'Montserrat';
+  margin-bottom: 25px;
+  text-align: center;
+  text-transform: uppercase;
+}
+
+ul.homepage-featured-work {
+  margin: 0px 0px 24px 0px;
+}
+
+ul li.individual-featured-work img {
+  padding: 7px;
+}
+
+ul li.individual-featured-work {
+  display: inline-block;
+  text-align: center;
+}
+ul li.individual-featured-work h3 {
+  margin-top: 16px;
+}
+
+ul li.individual-featured-work h3 a {
+  font-size: 16px;
+  font-weight: 300;
 
 }
