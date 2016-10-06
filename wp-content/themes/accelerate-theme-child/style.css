@@ -18,6 +18,12 @@
     background: url("img/taxi-photo.jpg") no-repeat scroll left center / cover rgba(0, 0, 0, 0);
 }
 
+
+/* highlight menu item for current page */
+li.current-menu-item a {
+  font-weight: bold;
+}
+
 #masthead {
     background: none repeat scroll 0 0 #45ac9d;
 
@@ -153,7 +159,6 @@ ul li.individual-featured-work h3 {
 ul li.individual-featured-work h3 a {
   font-size: 16px;
   font-weight: 300;
-
 }
 
 /* Case Study Archive */
@@ -163,7 +168,6 @@ aside.case-study-sidebar h2 a {
 	font-family: 'Open Sans';
 	font-weight: 300;
   margin-top: 0;
-
 }
 
 div.case-study-archive-images {
@@ -177,5 +181,60 @@ div.case-study-archive-images img{
   margin: 60px 50px 5px 20px;
   width: 85%;
   height: auto;
+}
 
+/* Ninja Forms Styling */
+
+#nf-form-1-cont {
+  color: #4d4d4d;
+  font-size: 16px;
+	font-family: 'Open Sans';
+  font-weight: 200;
+}
+
+#ninja-forms-fields, #nf-field-3 {
+  border: 1px #CCC solid;
+}
+
+.nf-field .nf-field-label label {
+    font-weight: normal;
+    font-size: .9em;
+}
+.nf-field-container.textbox-container.label-above,
+.nf-field-container.email-container.label-above {
+    display: block;
+    width: 49%;
+    float: left;
+    clear: initial;
+}
+.nf-field-container.email-container.label-above {
+  margin-left: 2%;
+}
+
+/* The Send button */
+#nf-field-4 {
+	background-color: #45AC9D;
+  color: #FFF;
+  float: right;
+  font-size: 20px;
+	font-family: 'Montserrat';
+	width: 200px;
+  height: 60px;
+}
+
+/* page styles */
+
+#content {
+  margin: auto;
+  width: 623px;
+}
+
+#content h2 {
+	font-family: 'Montserrat';
+}
+
+#content p {
+  color: #4d4d4d;
+  font-size: 16px;
+	font-family: 'Open Sans';
 }
