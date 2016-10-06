@@ -15,7 +15,7 @@
 get_header(); ?>
 
 	<div id="primary" class="site-content">
-		<div id="content" role="main">
+		<div id="archive-content" role="main">
 			<?php while ( have_posts() ) : the_post();
 					//store custom adv fields in php variable using built in function from ACF Plugin-->
 					$service = get_field('service'); //service provided to client
