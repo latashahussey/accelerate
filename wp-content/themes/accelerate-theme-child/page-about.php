@@ -15,7 +15,7 @@
 get_header('about'); ?>
 
 	<div id="primary" class="site-content">
-		<div id="content" role="main">
+		<div id="about-content" role="main">
 			<?php while ( have_posts() ) : the_post(); ?>
 				<h2><?php the_title(); ?></h2>
 				<p>
@@ -33,23 +33,23 @@ get_header('about'); ?>
 			 ?>
 
 			 <!--Display custom advanced fields on page-->
-			 <article class="services">
-				 <aside class="service-sidebar">
+			 <section class="services">
+
+           <!--Display service images--->
+           <div class ="service-description">
+
+             <?php if($icon) { ?>
+               <?php echo wp_get_attachment_image( $icon, $size ); ?>
+           <?php } ?>
+          
+
+           <!--Now display the service details-->
            <h4><?php the_title(); ?></h4>
-
-					 <!--Now display the service details-->
-					  <p>
-							<?php the_content(); ?>
-						</p>
-				 </aside>
-
-				 <!--Display service images--->
-				 <div class="service-icons">
-					 <?php if($icon) { ?>
-						 <?php echo wp_get_attachment_image( $icon, $size ); ?>
-				 <?php } ?>
+           <p>
+             <?php the_content(); ?>
+           </p>
 				 </div>
-			 </article>
+			 </section>
 			<?php endwhile; // end of the loop. ?>
       <?php wp_reset_query(); ?>
 

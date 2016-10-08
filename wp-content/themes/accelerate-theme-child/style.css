@@ -235,6 +235,36 @@ div.case-study-archive-images img{
 
 #content p {
   color: #4d4d4d;
-  font-size: 16px;
+  font-size: 14px;
 	font-family: 'Open Sans';
+}
+
+/* About Page */
+#about-content {
+  margin: auto;
+  width: 768px;
+}
+
+#about-content h2 {
+	font-family: 'Montserrat';
+}
+
+#about-content p {
+  color: #4d4d4d;
+  font-size: 13px;
+	font-family: 'Open Sans';
+}
+
+/* About Page */
+
+div.service-icons img {
+  margin-top: 25%;
+  margin-bottom: 25%;
+}
+
+.services:nth-of-type(even) div.service-description img {
+  float: left;
+}
+.services:nth-of-type(even) div.service-description img {
+  float: right;
 }
