@@ -240,19 +240,20 @@ div.case-study-archive-images img{
 }
 
 /* About Page */
+
 #about-content {
   margin: auto;
-  width: 768px;
+  width: 623px;
 }
 
-#about-content h2 {
+#about-content h4 {
 	font-family: 'Montserrat';
   text-align: center;
 }
 
 #about-content p {
   color: #4d4d4d;
-  font-size: 13px;
+  font-size: 14px;
 	font-family: 'Open Sans';
 }
 
@@ -271,4 +272,8 @@ div.case-study-archive-images img{
 .services:nth-child(even) div.service-icon img{
      float:left;
      margin-right: 5%;
+}
+
+.service-title {
+    font-weight: bold;
 }

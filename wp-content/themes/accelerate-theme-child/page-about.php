@@ -17,7 +17,7 @@ get_header('about'); ?>
 	<div id="primary" class="site-content">
 		<div id="about-content" role="main">
 			<?php while ( have_posts() ) : the_post(); ?>
-				<h2><?php the_title(); ?></h2>
+				<h4><?php the_title(); ?></h4>
 				<span class="about-intro">
 					<?php the_content(); ?>
 				</span>
