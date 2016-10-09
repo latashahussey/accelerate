@@ -322,3 +322,26 @@ div.case-study-archive-images img{
   margin-left: 10%;
   width:25%;
 }
+
+/* Footer Social Media Menu */
+
+#menu-social-media-nav li {
+  display: inline-block;
+}
+
+.tw {
+	background: url("img/twitter-icon.png") no-repeat center 0;
+  padding: 15px;
+}
+.fb {
+	background: url("img/facebook-icon.png") no-repeat center 0;
+  padding: 15px;
+}
+.ln {
+	background: url("img/linkedin-icon.png") no-repeat center 0;
+  padding: 15px;
+}
+.db {
+	background: url("img/dribbble-icon.png") no-repeat center 0;
+  padding: 15px;
+}
