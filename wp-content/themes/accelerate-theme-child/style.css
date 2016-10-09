@@ -242,7 +242,9 @@ div.case-study-archive-images img{
 /* About Page */
 
 #about-content {
-  margin: auto;
+  margin-top: 325px;
+  margin-left: auto;
+  margin-right: auto;
   width: 623px;
 }
 
@@ -262,7 +264,7 @@ div.case-study-archive-images img{
 }
 
 .services {
-  margin-bottom: 45px;
+  margin-bottom: 65px;
 }
 
 .services:nth-child(odd) div.service-icon img{
@@ -276,4 +278,47 @@ div.case-study-archive-images img{
 
 .service-title {
     font-weight: bold;
+}
+
+/* Header for About page */
+
+.about-head {
+    background: url("img/taxi-photo.jpg") no-repeat scroll left bottom / cover rgba(0, 0, 0, 0);
+    height:300px;
+}
+
+.about-head-text {
+  width: 55%;
+  margin: auto;
+}
+.about-head-text p {
+  text-align: center;
+  font-weight: 500;
+  font-size: 25px;
+  padding: 75px;
+}
+
+.first_word {
+  color: #45AC9D;
+}
+
+.contact-content {
+  border-top: 1px solid rgba(0, 0, 0, 0.1);
+  margin: auto;
+  height: 100px;
+}
+.contact-message p{
+  color: #4d4d4d;
+  float: left;
+  font-size: 24px;
+  font-weight: bold;
+  text-align: right;
+  margin-top: 50px;
+  width: 50%;
+}
+.contact-button {
+  float:  left;
+  margin-top: 50px;
+  margin-left: 10%;
+  width:25%;
 }

@@ -45,7 +45,22 @@
 			</nav>
 			<div class="clearfix"></div>
 		</div>
-
+		<div class="about-head">
+			<!--get the about page header description-->
+			<?php while ( have_posts() ) : the_post();
+				$header_description =get_field('header_description');
+    		$hd_first_word = explode(' ',trim($header_description)); //grab the first word in the about page header description field
+				$hd_minus_first_word = strstr($header_description, $hd_first_word[1]); //grab the remaining description minus the first word
+			?>
+			<div class="about-head-text">
+			  <!--display the about page header description-->
+				<p><span class="first_word"><?php echo $hd_first_word[0];?> </span><?php echo $hd_minus_first_word; ?></p>
+			</div>
+		</div>
+	<?php endwhile; // end of the loop. ?>
+	<?php wp_reset_query(); ?>
 	</header><!-- #masthead -->
+
+
 
 	<div id="main" class="site-main">

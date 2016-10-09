@@ -50,11 +50,10 @@ get_header('about'); ?>
              <?php the_content(); ?>
            </div>
 
-
 			 </section>
 			<?php endwhile; // end of the loop. ?>
       <?php wp_reset_query(); ?>
     </div><!-- #content -->
 	</div><!-- #primary -->
 
-<?php get_footer(); ?>
+<?php get_footer('about'); ?>
