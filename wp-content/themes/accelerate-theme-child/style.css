@@ -320,7 +320,7 @@ div.case-study-archive-images img{
   float:  left;
   margin-top: 50px;
   margin-left: 10%;
-  width:25%;
+  width: 25%;
 }
 
 /* Footer Social Media Menu */
@@ -344,4 +344,29 @@ div.case-study-archive-images img{
 .db {
 	background: url("img/dribbble-icon.png") no-repeat center 0;
   padding: 15px;
+}
+
+
+/* 404 page */
+
+#content-404 {
+    background: url("img/cow.jpeg") no-repeat scroll left center / cover rgba(0, 0, 0, 0);
+    width: 1024px;
+    height: 675px;
+}
+
+#content-404 h1.page-title {
+    font-weight: bold;
+    font-family: 'montserrat';
+    font-size: 53px;
+    color: #FFF;
+    text-align: center;
+}
+
+
+
+.button-404 {
+  margin-left: 38%;
+  margin-right: 35%;
+  margin-top: 10%;
 }
