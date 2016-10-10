@@ -370,3 +370,27 @@ div.case-study-archive-images img{
   margin-right: 35%;
   margin-top: 10%;
 }
+
+/* Sidebar Widget */
+.widget {
+	font-size: 0.83em;
+	font-weight: 400;
+	padding: 0 40px;
+}
+.widget li {
+  line-height: 1.5em;
+}
+h2.widget-title {
+  font-family: 'Montserrat';
+}
+
+.widget input[type="submit"] {
+ border-top: 1px solid #a6a6a6;
+ border-bottom: 1px solid #a6a6a6;
+ border-right: 1px solid #a6a6a6;
+ border-left: none;
+ height: 36px;
+ background: #45ac9d;
+ color: #ffffff;
+ vertical-align: middle;
+}
