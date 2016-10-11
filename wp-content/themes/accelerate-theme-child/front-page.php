@@ -66,6 +66,12 @@ get_header(); ?>
 			<?php endwhile ?>
 			<?php wp_reset_query(); ?>
 		</div>
+		<?php if ( is_active_sidebar( 'sidebar-2' ) ) : ?>
+		<div id="secondary" class="widget-area" role="complementary">
+			<?php dynamic_sidebar( 'sidebar-2' ); ?>
+			   <a class="follow-us-link" href="http://twitter.com/latashahussey">Follow Us <span>&rsaquo;</span></a>
+		</div>
+		<?php endif; ?>
 	</div>
 </section>
 <?php get_footer(); ?>
