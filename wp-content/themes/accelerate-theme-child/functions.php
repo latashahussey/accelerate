@@ -66,4 +66,32 @@ function accelerate_theme_child_widget_init() {
 	) );
 
 }
+
+/* Tell WordPress to Use My Login Styles*/
+function my_custom_login() {
+  echo '<link rel="stylesheet" type="text/css" href="' . get_bloginfo('stylesheet_directory') . '/login/custom-login-styles.css" />';
+}
+add_action('login_head', 'my_custom_login');
+
+
+/* Tell WordPess to Change the Login Logo URL*/
 add_action( 'widgets_init', 'accelerate_theme_child_widget_init' );
+
+function my_login_logo_url() {
+  return get_bloginfo( 'url' );
+}
+
+add_filter( 'login_headerurl', 'my_login_logo_url' );
+
+function my_login_logo_url_title() {
+  return 'Accelerate Marketing';
+}
+add_filter( 'login_headertitle', 'my_login_logo_url_title' );
+
+/* Customize login error message */
+
+function login_error_override()
+{
+    return 'Invalid login. Try again.';
+}
+add_filter('login_errors', 'login_error_override');
